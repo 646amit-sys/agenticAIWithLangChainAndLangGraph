@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../0-DataIngestParsing"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Node/express-multiagent-chatbot"
+		}
+	],
+	"settings": {}
+}

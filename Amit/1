@@ -1,0 +1,22 @@
+Sementic
+To create a container image for Amazon ECS, you first need to create a Docker image of your application by writing a Dockerfile that describes the base image and the dependencies you want installed. Then, you can build the Docker image on your local system or Amazon EC2 instance and push it to Amazon ECR container registry for use in an Amazon ECS task definition. Finally, you can deploy this image by creating an Amazon ECS service that allows you to run and maintain multiple instances of your containerized application within an ECS cluster.
+
+Hybrid:
+To create a container image for Amazon ECS, you can use Docker. Docker provides the tools to build, run, test, and deploy distributed applications in containers. Once you have created your Docker image, you can push it to Amazon ECR, a container registry, for use in your Amazon ECS task definitions.
+
+
+python3 -m pip install --upgrade pip
+
+python3 -m pip uninstall -y langchain langchain-core langchain-openai langchain-community langchain-text-splitters langchain-classic openai
+
+python3 -m pip install \
+langchain==0.3.27 \
+langchain-core==0.3.79 \
+langchain-openai==0.3.35 \
+langchain-community==0.3.31 \
+langchain-text-splitters==0.3.11 \
+langchain-classic==1.0.0 \
+openai \
+faiss-cpu \
+pymupdf \
+python-dotenv
